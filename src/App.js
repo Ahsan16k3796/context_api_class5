@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Parent from './parent'
 import ValueContext from './ValueContext';
+import numberReducer from './numberreducer';
 
 function App() {
   let value=useState(45);
+
+  let number=useReducer(numberReducer);
 
   
   return (

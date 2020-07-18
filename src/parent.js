@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import Child from './child'
+import Child2 from './child2';
 
 function Parent(props) {
   return (
     <div>
-       Number in Parent is: {props.num}
-      <Child num={props.num}> 
-      </Child>
+      <Child> </Child>
+
+      <Child2></Child2>
     </div>
   );
 }
